@@ -71,7 +71,6 @@ def consolidate_cart(cart)
   consolidated_items = {}
   cart.each do |item|
     if consolidated_items[item.keys[0]]
-      binding.pry
       consolidated_items[item.keys[0]][:count] += 1
     else
         consolidated_items[item.keys[0]] = {
