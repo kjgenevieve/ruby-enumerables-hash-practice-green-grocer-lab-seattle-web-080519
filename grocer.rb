@@ -28,12 +28,13 @@ def consolidate_cart(cart_ary)
   cart_ary.each do |item_hash|
     item_hash.each do |food_name, food_data_hash|
       # if the item is already there...
-      if food_name == cart_hash[key]
-        cart_hash[food_name]
-      cart_hash[]
-      #update the cart_hash to +1 item
-    
+      if food_name == cart_hash.keys
+        #update the cart_hash to +1 item
+          cart_hash[food_data_hash][:count] += 1
     # else add it to the cart_hash
+      else
+        cart_hash
+      end
   end
 end
 
