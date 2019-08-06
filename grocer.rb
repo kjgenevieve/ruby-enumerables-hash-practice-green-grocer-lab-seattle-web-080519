@@ -72,13 +72,13 @@ def consolidate_cart(cart)
   cart.each do |item|
     if consolidated_items[item.keys[0]]
       consolidated_items[item.keys[0]][:count] += 1
-      binding.pry
     else
         consolidated_items[item.keys[0]] = {
           price: item.values[0][:price],
           clearance: item.values[0][:clearance],
           count: 1
         }
+        binding.pry
     end
   end
   return consolidated_items
