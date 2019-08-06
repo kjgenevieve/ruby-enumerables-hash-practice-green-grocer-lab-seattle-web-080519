@@ -33,10 +33,19 @@ def consolidate_cart(cart_ary)
           cart_hash[food_data_hash][:count] += 1
     # else add it to the cart_hash
       else
-        cart_hash
+        cart_hash[:symbol] = value
       end
   end
 end
+
+person = {
+	name: "Sam",
+	age: 31
+}
+
+person[:age]
+
+person[:age] = 32
 
 
 
