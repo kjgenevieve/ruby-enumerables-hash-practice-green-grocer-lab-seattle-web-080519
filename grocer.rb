@@ -24,16 +24,14 @@ def consolidate_cart(cart_ary)
   
   cart_hash = {}
   
-  # for every item in the cart_ary
-  cart_ary.each do |item_hash|
-    item_hash.each do |food_name, food_data_hash|
-    if the item is already there...
-        update the cart_hash to +1 item
-    else
-      add it to the cart_hash
-      end
-  end
-end
+#   for every item in the cart_ary
+#     if the item is already there...
+#         update the cart_hash to +1 item
+#     else
+#       add it to the cart_hash
+#       end
+#   end
+# end
 
 person = {
 	name: "Sam",
